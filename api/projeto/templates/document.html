@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>DOCUMENTO       </h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.NM_NUMERO_DOCUMENTO.label }}<br>
+            {{ form.NM_NUMERO_DOCUMENTO(size=32) }}<br>
+            {% for error in form.NM_NUMERO_DOCUMENTO.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}

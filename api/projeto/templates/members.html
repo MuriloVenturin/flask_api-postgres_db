@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome in!</h1>
+    <h3>This is the members-only page.</h3>
+    {{ form.hidden_tag() }}
+      <div class="container">
+    <p>
+        {{ form.username.label }}
+        {{ form.username.data }}<br>
+        {% for error in form.username.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+   <a href="/api/login/">logout</a>
+    </p>
+
+
+{% endblock %}
+
+</body>
+</html>
