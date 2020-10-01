@@ -4,6 +4,7 @@ from sqlalchemy.exc import OperationalError
 
 from projeto.restplus import api
 from projeto.entity.crud.model import Teste
+from projeto.entity.crud_2.model import Teste_2
 from projeto.constants import CodeHttp
 
 ns = api.namespace('crud', description='This operation will record a data in the database')

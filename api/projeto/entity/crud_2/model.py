@@ -1,8 +1,8 @@
 from projeto.database import db
 from .. import Base, engine
 
-class Teste(Base):
-    __tablename__ = 'TESTE'
+class Teste_2(Base):
+    __tablename__ = 'TESTE_2'
 
     ID = db.Column(db.BigInteger, primary_key=True, nullable=False, autoincrement=True)
     USUARIO = db.Column(db.String, nullable=True)
