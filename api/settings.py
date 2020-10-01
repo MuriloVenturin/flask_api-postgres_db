@@ -12,5 +12,6 @@ RESTPLUS_VALIDATE = True
 RESTPLUS_MASK_SWAGGER = False
 RESTPLUS_ERROR_404_HELP = False
 
-SQL_CONNECTION_STRING = 'postgresql://postgres:changeme@localhost:5432/postgres'
+SQL_CONNECTION_STRING = 'postgresql://postgres:changeme@postgres:5432/postgres'
 
+# SQL_CONNECTION_STRING = 'postgresql+psycopg2://postgres:changeme@localhost/postgres'

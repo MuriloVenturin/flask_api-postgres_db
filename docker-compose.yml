@@ -10,7 +10,7 @@ services:
     volumes:
       - ./api/:/code
     ports:
-      - 9000:9000
+      - 9009:9009
     networks:
       - services_back
 
