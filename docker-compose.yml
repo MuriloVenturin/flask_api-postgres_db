@@ -14,15 +14,14 @@ services:
     networks:
       - services_back
 
-  postgres-db:
+  postgres:
     container_name: postgres_container
     image: postgres
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
-      PGDATA: /data/postgres
     volumes:
-      - /home/murilo/projects/api_bd/bd/data:/var/lib/postgresql/data
+      - ./postgres-data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     networks:
